@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import Btn from "../components/common/Btn";
 import banner from "../assets/Images/banner.mp4"
 import {TypeAnimation} from "react-type-animation"
-import Box from "../components/home/box";
+import Box from "../components/home/Box";
 import bghome from "../assets/Images/bghome.svg"
 import timeline from "../assets/Images/TimelineImage.png"
 import logo1 from "../assets/TimeLineLogo/Logo1.svg"
