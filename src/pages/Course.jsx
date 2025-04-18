@@ -11,7 +11,7 @@ import { PiCertificate } from "react-icons/pi";
 import { MdOutlineHourglassEmpty } from "react-icons/md";
 import { GoClock } from "react-icons/go";
 import { CiGlobe } from "react-icons/ci";
-import CourseDetailDropdown from "../components/course/courseDetailDropdown";
+import CourseDetailDropdown from "../components/course/CourseDetailDropdown";
 import { buyCourse } from "../utility/buyCourse";
 import { useSelector } from "react-redux";
 import Marquee from "react-fast-marquee";
