@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-lora: "Lora", serif; 
+    --color-jetblack: #29292B;
+    --color-pale: #E3E1D6;
+    --color-darkpale:#D9D7CC;
+    --color-secondary:#D0894F;
+    --color-darkblue:#000814;
+    --color-lightblue:#2c333f;
+    /* for blue background */
+    --color-bg-blue:#1d1d2b; 
+    --color-bg-light-blue:#282839;
+    --color-sky-blue:#139ae1;
+    --color-gray-white:#b0b3d0;
+    --color-light-white:rgb(210,210,210)
+
+}
+
+body{
+    font-family: var(--font-lora);
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 3px solid;
+    border-color: #FFF #FFF transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid;
+    border-color: transparent #139ae1 #139ae1;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    animation: rotationBack 0.5s linear infinite;
+    transform-origin: center center;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+      
+  @keyframes rotationBack {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+      
+
+
